@@ -1,6 +1,48 @@
 <div>
-    <h2>Hello Word!!</h2>
+    <h2>Criar Contato</h2>
 
-    {{ $name }}
-    <input type="text" wire:model='name' style="border: 1px solid #f00">
+<div>
+    <form method="post">
+
+        <div>
+            <label>Nome</label>
+
+            <input type="text">
+
+            <div class="error-message">
+                @error('name')
+                    {{$message}}
+                @enderror
+            </div>
+        </div>
+
+        <div>
+            <label>Email</label>
+
+            <input type="email">
+
+            <div class="error-message">
+                @error('email')
+                    {{$message}}
+                @enderror
+            </div>
+        </div>
+
+        <div>
+            <label>Telefone</label>
+
+            <input type="text">
+
+            <div class="error-message">
+                @error('phone')
+                    {{$message}}
+                @enderror
+            </div>
+        </div>
+
+        <button type="submit">
+            Adicionar Contato
+        </button>
+    </form>
+</div>
 </div>
