@@ -2,12 +2,12 @@
     <h2>Criar Contato</h2>
 
 <div>
-    <form method="post">
+    <form wire:submit.prevent="create" method="post">
 
         <div>
             <label>Nome</label>
 
-            <input type="text">
+            <input type="text" wire:model="name">
 
             <div class="error-message">
                 @error('name')
@@ -19,7 +19,7 @@
         <div>
             <label>Email</label>
 
-            <input type="email">
+            <input type="email" wire:model="email">
 
             <div class="error-message">
                 @error('email')
@@ -31,7 +31,7 @@
         <div>
             <label>Telefone</label>
 
-            <input type="text">
+            <input type="text" wire:model="phone">
 
             <div class="error-message">
                 @error('phone')
