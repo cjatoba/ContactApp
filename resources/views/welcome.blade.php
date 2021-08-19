@@ -52,6 +52,12 @@
                 font-weight: bold;
                 padding-top: 4px;
             }
+
+            .alert {
+                width: 100%;
+                padding: 10px 15px;
+                border:  1px solid #036;
+            }
         </style>
     </head>
     <body class="antialiased">

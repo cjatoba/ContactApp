@@ -5,6 +5,14 @@
     <form wire:submit.prevent="create" method="post">
 
         <div>
+            @if (session()->has('message'))
+                <div class="alert">
+                    {{ session('message') }}
+                </div>
+            @endif
+        </div>
+
+        <div>
             <label>Nome</label>
 
             <input type="text" wire:model="name">
