@@ -53,3 +53,13 @@ DB_CONNECTION=sqlite
 # DB_USERNAME=root
 # DB_PASSWORD=
 ```
+
+### Executar as migrations
+
+```
+php artisan migrate
+```
+
+## Dicas
+
+- Cada componente deve ter apenas uma responsabilidade, por exmeplo um componente para criar o contado, outro componente para exibir etc
