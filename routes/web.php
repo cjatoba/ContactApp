@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Livewire\ContactShow;
+use App\Http\Livewire\ContactCreate;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +16,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.register');
 });
+
+Route::get('/contact', ContactCreate::class)->name('contact.create');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', ContactShow::class)->name('dashboard');
