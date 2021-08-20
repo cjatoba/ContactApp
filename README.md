@@ -62,4 +62,4 @@ php artisan migrate
 
 ## Dicas
 
-- Cada componente deve ter apenas uma responsabilidade, por exmeplo um componente para criar o contado, outro componente para exibir etc
+- Cada componente deve ter apenas uma responsabilidade, por exmeplo um componente para criar o contato, outro componente para exibir etc
